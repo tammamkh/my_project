@@ -2,61 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <meta name="description" content="Welcome to my portfolio website. Learn more about me, my projects, and my skills.">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <nav role="navigation">
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
+
+    <!-- Main Content -->
     <main>
-        <section id="about-me">
+        <!-- About Me Section -->
+        <section id="about-me" class="about-me">
             <h2>About Me</h2>
-            <p>Hello! I'm a passionate developer with experience in building web applications. I love solving problems and learning new technologies.</p>
+            <p>Welcome to my portfolio! I am a passionate developer with a love for creating innovative solutions.</p>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <article>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
                 <h3>Project 1</h3>
-                <p>A brief description of Project 1. <a href="#">View details</a></p>
-            </article>
-            <article>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
                 <h3>Project 2</h3>
-                <p>A brief description of Project 2. <a href="#">View details</a></p>
-            </article>
+                <p>Description of Project 2.</p>
+            </div>
+            <!-- Add more project cards as needed -->
         </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-            </ul>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <!-- Add more skills as needed -->
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="contact-form">
+            <h2>Contact Me</h2>
             <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                 <button type="submit">Send</button>
             </form>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2023 My Portfolio. All rights reserved.</p>
     </footer>
